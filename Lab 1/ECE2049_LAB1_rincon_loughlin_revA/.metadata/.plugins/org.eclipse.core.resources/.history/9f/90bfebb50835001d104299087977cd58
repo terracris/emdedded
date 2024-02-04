@@ -1,0 +1,6 @@
+# FIXED
+
+sucky_main.obj: ../sucky_main.c
+
+../sucky_main.c:
+

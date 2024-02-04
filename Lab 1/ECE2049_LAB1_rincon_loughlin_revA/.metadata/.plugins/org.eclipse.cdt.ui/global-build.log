@@ -1,0 +1,1260 @@
+
+**** Clean-only build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k clean 
+ 
+DEL /F  "ece2049_demo_ccs91.hex"  "ece2049_demo_ccs91.out" 
+DEL /F "main.obj" "peripherals.obj" "sucky_main.obj" "LcdDriver\HAL_MSP_EXP430FR5529_Sharp96x96.obj" "LcdDriver\Sharp96x96.obj" "fonts\fontfixed6x8.obj" "images\LPRocket_96x37.obj" "images\TI_Logo_69x64.obj" 
+DEL /F "main.d" "peripherals.d" "sucky_main.d" "LcdDriver\HAL_MSP_EXP430FR5529_Sharp96x96.d" "LcdDriver\Sharp96x96.d" "fonts\fontfixed6x8.d" "images\LPRocket_96x37.d" "images\TI_Logo_69x64.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building file: "../peripherals.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="peripherals.d_raw"  "../peripherals.c"
+Finished building: "../peripherals.c"
+ 
+Building file: "../sucky_main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="sucky_main.d_raw"  "../sucky_main.c"
+Finished building: "../sucky_main.c"
+ 
+Building file: "../LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.d_raw" --obj_directory="LcdDriver"  "../LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.c"
+Finished building: "../LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.c"
+ 
+Building file: "../LcdDriver/Sharp96x96.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="LcdDriver/Sharp96x96.d_raw" --obj_directory="LcdDriver"  "../LcdDriver/Sharp96x96.c"
+Finished building: "../LcdDriver/Sharp96x96.c"
+ 
+Building file: "../fonts/fontfixed6x8.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="fonts/fontfixed6x8.d_raw" --obj_directory="fonts"  "../fonts/fontfixed6x8.c"
+Finished building: "../fonts/fontfixed6x8.c"
+ 
+Building file: "../images/LPRocket_96x37.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="images/LPRocket_96x37.d_raw" --obj_directory="images"  "../images/LPRocket_96x37.c"
+Finished building: "../images/LPRocket_96x37.c"
+ 
+Building file: "../images/TI_Logo_69x64.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="images/TI_Logo_69x64.d_raw" --obj_directory="images"  "../images/TI_Logo_69x64.c"
+Finished building: "../images/TI_Logo_69x64.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 160)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 160)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 160)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 160)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 160)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 144: warning #176-D: expression has no effect
+"../main.c", line 153: error #122: a case label may only be used within a switch
+"../main.c", line 164: error #122: a case label may only be used within a switch
+"../main.c", line 185: error #122: a case label may only be used within a switch
+"../main.c", line 194: error #171: expected a declaration
+"../main.c", line 243: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 245: error #171: expected a declaration
+"../main.c", line 268: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 269: error #171: expected a declaration
+"../main.c", line 271: error #171: expected a declaration
+"../main.c", line 273: warning #78-D: this declaration has no storage class or type specifier
+"../main.c", line 273: error #148: declaration is incompatible with "enum state curr_state" (declared at line 24)
+"../main.c", line 273: error #150: variable "curr_state" has already been initialized
+"../main.c", line 274: error #80: expected a type specifier
+"../main.c", line 274: warning #78-D: this declaration has no storage class or type specifier
+"../main.c", line 274: error #148: declaration is incompatible with "void Graphics_clearDisplay(const Graphics_Context *)" (declared at line 1016 of "C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib/grlib.h")
+"../main.c", line 275: error #171: expected a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+12 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 144: warning #176-D: expression has no effect
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 172)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 172)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 172)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 172)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 172)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 164: error #138: expression must be a modifiable lvalue
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 177)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 164: error #138: expression must be a modifiable lvalue
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 177)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 178)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 178)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 178)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 176)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 176)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 176)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 178)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 71: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 179)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 71: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 179)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 71: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 179)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 71: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 179)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 69: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 179)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 202)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 202)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 202)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 121: error #128: expected a statement
+"../main.c", line 124: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 203)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 121: error #128: expected a statement
+"../main.c", line 124: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 203)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 204)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 204)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 204)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 204)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 204)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 204)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 204)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 70: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 204)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 71: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 205)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 126: error #20: identifier "roundCompleted" is undefined
+"../main.c", line 128: error #20: identifier "roundComplete" is undefined
+"../main.c", line 71: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 212)
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 126: error #20: identifier "roundCompleted" is undefined
+"../main.c", line 128: error #20: identifier "roundComplete" is undefined
+"../main.c", line 71: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 212)
+2 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 128: error #20: identifier "roundComplete" is undefined
+"../main.c", line 71: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 212)
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 71: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 212)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 71: warning #548-D: transfer of control bypasses initialization of:
+            variable "box" (declared at line 214)
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./sucky_main.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ECE2049_LAB1_rincon_loughlin_revA/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****

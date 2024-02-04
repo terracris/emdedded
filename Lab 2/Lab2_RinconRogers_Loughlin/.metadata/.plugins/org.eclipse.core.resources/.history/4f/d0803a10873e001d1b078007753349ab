@@ -1,0 +1,288 @@
+#include <msp430.h>
+
+/* Peripherals.c and .h are where the functions that implement
+ * the LEDs and keypad, etc are. It is often useful to organize
+ * your code by putting like functions together in files.
+ * You include the header associated with that file(s)
+ * into the main file of your project. */
+#include "peripherals.h"
+#include <stdlib.h>
+#include "notes.c"
+
+
+// Declare globals here
+// TODO CHANGE:
+enum state {welcome, countdown};
+enum state state = welcome;
+unsigned int MAX_COUNTER = 0;
+char currKey = '0';
+unsigned int toggleWelcome = 1; //flag indicating when to toggle the init of the welcome screen;
+unsigned int timer = 0;
+void stopTimer();
+
+unsigned int toggleTimer = 1;
+
+const unsigned int TIMER_COUNTDOWN = 3;
+unsigned int timer_cnt;
+unsigned int time = 0;
+
+
+
+// Function Prototypes
+void configButtons();
+char readButtons();
+void configLED(char inbits);
+void init();
+void countdownScreen();
+void toggleWelcomeScreen();
+void runtimerA2();
+void stopTimer();
+int intToAscii(int number);
+void playNote(struct Note note);
+
+
+// Main
+void main(void)
+
+{
+
+
+    WDTCTL = WDTPW | WDTHOLD;    // Stop watchdog timer. Always need to stop this!!
+                                 // You can then configure it properly, if desired
+
+    // Some utterly useless instructions -- Step through them
+    // What size does the Code Composer MSP430 Compiler use for the
+    // following variable types? A float, an int, a long integer and a char
+
+    // Useful code starts here
+    initLeds();
+
+    configDisplay();
+    configKeypad();
+
+    //enable_interrupt();
+    _BIS_SR(GIE);
+
+
+    // We are now done writing to the display.  However, if we stopped here, we would not
+    // see any changes on the actual LCD.  This is because we need to send our changes
+    // to the LCD, which then refreshes the display.
+    // Since this is a slow operation, it is best to refresh (or "flush") only after
+    // we are done drawing everything we need.
+    Graphics_flushBuffer(&g_sContext);
+
+
+    setLeds(0);
+    configButtons();
+
+    while (1)    // Forever loop
+    {
+        currKey = getKey();
+
+        switch(state) {
+
+        case welcome:
+            if(toggleWelcome) {
+                init();
+                toggleWelcome = 0;
+            }
+            if(currKey == '*') {
+                state = countdown;
+            }
+            break;
+
+
+        case countdown:
+            countdownScreen();
+            toggleWelcomeScreen();
+            break;
+
+
+
+        }
+                  }
+
+    }  // end while (1)
+
+
+char readButtons() {
+    char x;
+    char y;
+    char z;
+    char v;
+
+    x = (~(P7IN) & (BIT0)) << 2;  //Button S1
+    y = (~(P3IN) & BIT6) >> 5;   // Button S2
+    z = (~(P2IN) & BIT2) << 1;  // Button S3
+    v = ~(P7IN) & (BIT4);
+
+    char outbits = (x | y | z | v);
+
+    return outbits;
+}
+
+
+void configButtons() {
+
+    // Button S1: 7.0 and S4: 7.4 (these are configured correctly)
+    P7SEL &= ~(BIT0 | BIT4);
+    P7DIR &= ~(BIT0 | BIT4);
+    P7REN |=  (BIT0 | BIT4);
+    P7OUT |=  (BIT0 | BIT4);
+
+    // Button S2: 3.6
+    P3SEL &= ~(BIT6);
+    P3DIR &= ~(BIT6);
+    P3REN |=  (BIT6);
+    P3OUT |=  (BIT6);
+
+    //Button S3: 2.2
+    P2SEL &= ~(BIT2);
+    P2DIR &= ~(BIT2);
+    P2REN |=  (BIT2);
+    P2OUT |=  (BIT2);
+
+}
+
+void configLED(char inbits) {
+    P6SEL &= ~(BIT4 | BIT3 | BIT2 | BIT1);
+    P6DIR |=  (BIT4 | BIT3 | BIT2 | BIT1);
+
+    P6OUT |= inbits;
+
+}
+
+
+void init() {
+
+    configDisplay();
+    configKeypad();
+
+    // *** Intro Screen ***
+       Graphics_clearDisplay(&g_sContext); // Clear the display
+
+       // Write some text to the display
+       Graphics_drawStringCentered(&g_sContext, "Guitar", AUTO_STRING_LENGTH, 48, 15, TRANSPARENT_TEXT);
+       Graphics_drawStringCentered(&g_sContext, "Hero", AUTO_STRING_LENGTH, 48, 25, TRANSPARENT_TEXT);
+       Graphics_drawStringCentered(&g_sContext, "Press *", AUTO_STRING_LENGTH, 48, 35, TRANSPARENT_TEXT);
+       Graphics_drawStringCentered(&g_sContext, "to START", AUTO_STRING_LENGTH, 48, 45, TRANSPARENT_TEXT);
+
+
+       // Draw a box around everything because it looks nice
+       Graphics_Rectangle box = {.xMin = 5, .xMax = 91, .yMin = 5, .yMax = 91 };
+       Graphics_drawRectangle(&g_sContext, &box);
+
+       // We are now done writing to the display.  However, if we stopped here, we would not
+       // see any changes on the actual LCD.  This is because we need to send our changes
+       // to the LCD, which then refreshes the display.
+       // Since this is a slow operation, it is best to refresh (or "flush") only after
+       // we are done drawing everything we need.
+
+       Graphics_flushBuffer(&g_sContext);
+
+}
+
+
+//TODO: Refactor with timers
+void countdownScreen() {
+
+    //configuring countdown timers
+    // interrupt every 1 second
+
+    if(toggleTimer) {
+        TA2CTL = TASSEL_1 | ID_0 | MC_1;
+        TA2CCR0 = 327;  //counts every 0.01 seconds
+        TA2CCTL0 = CCIE;
+        toggleTimer = 0;
+    }
+
+
+    int timeToDisplay = TIMER_COUNTDOWN;  //time to display equals 3
+
+    while(timeToDisplay > 0) {
+        if(timer_cnt % 100 == 0) {
+            displayTime(timeToDisplay);
+            timeToDisplay--;
+        }
+
+    }
+
+    state = welcome;
+    stopTimer();
+
+
+}
+
+
+void displayTime(int time) {
+    unsigned char result[3];
+             result[0] = ' ';
+             result[2] = ' ';
+
+     Graphics_clearDisplay(&g_sContext); // Clear the display
+
+    char timeInASCII = intToAscii(time);
+    result[1] = timeInASCII;
+
+    Graphics_drawStringCentered(&g_sContext, result , AUTO_STRING_LENGTH, 48, 15, TRANSPARENT_TEXT); // takes in string
+
+    Graphics_flushBuffer(&g_sContext); //refresh screen
+
+}
+
+//TODO remove magic numbers and make into variables
+// after timer has ran through 4 seconds, stop the timer
+#pragma vector=TIMER2_A0_VECTOR
+    __interrupt void TimerA2_ISR() {
+        timer_cnt++;
+
+        if(timer_cnt % 100) {
+            time++;
+        }
+    }
+
+
+void startTimerA2() {
+
+        TA2CTL = TASSEL_1 + MC_1 + ID_0;
+        TA2CCR0 = 327;
+        TA2CCTL0 = CCIE;
+
+    }
+
+
+
+void playNote(struct Note note) {
+
+    startTimerA2();
+    while(time < note.duration) {
+        setBuzzerPitch(note.pitch);
+        configLED(note.LED);
+    }
+
+    stopTimer();
+
+}
+
+
+
+
+
+void toggleWelcomeScreen() {
+    toggleWelcome = 1;
+}
+
+void stopTimer() {
+    TA2CTL = MC_0;
+    TA2CCTL0 &= ~CCIE;
+    timer_cnt = 0;
+    toggleTimer = 1;
+    time = 0;
+
+}
+
+int intToAscii(int number) {
+   return '0' + number;
+}
+
+

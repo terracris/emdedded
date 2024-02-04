@@ -1,0 +1,57 @@
+#include <msp430.h>
+
+//structs
+struct Note {
+    unsigned int pitch;         //in frequency (Hz)
+    unsigned int duration;      //in seconds (s)
+    char LED;
+};
+
+struct Note NOTE1, NOTE2, NOTE3, NOTE4, NOTE5, NOTE6, NOTE7, NOTE8;
+
+void initNotes() {
+
+    //Note 1:
+    NOTE1.pitch = ;
+    NOTE1.duration = ;
+    NOTE1.LED = ;
+
+    //Note 2:
+    NOTE2.pitch = ;
+    NOTE2.duration = ;
+    NOTE2.LED = ;
+
+    //Note 3:
+    NOTE3.pitch = ;
+    NOTE3.duration = ;
+    NOTE3.LED = ;
+
+    //Note 4:
+    NOTE4.pitch = ;
+    NOTE4.duration = ;
+    NOTE4.LED = ;
+
+    //Note 5:
+    NOTE5.pitch = ;
+    NOTE5.duration = ;
+    NOTE5.LED = ;
+
+    //Note 6:
+    NOTE6.pitch = ;
+    NOTE6.duration = ;
+    NOTE6.LED = ;
+
+    //Note 7:
+    NOTE7.pitch = ;
+    NOTE7.duration = ;
+    NOTE7.LED = ;
+
+    //Note 8:
+    NOTE8.pitch = ;
+    NOTE8.duration = ;
+    NOTE8.LED = ;
+
+
+}
+
+

@@ -1,0 +1,6 @@
+# FIXED
+
+adc12_tempSensor.obj: ../adc12_tempSensor.c
+
+../adc12_tempSensor.c:
+

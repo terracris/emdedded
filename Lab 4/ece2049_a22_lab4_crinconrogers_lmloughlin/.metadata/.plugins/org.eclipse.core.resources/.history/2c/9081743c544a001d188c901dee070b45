@@ -1,0 +1,273 @@
+#include <msp430.h>
+#include <stdio.h>
+#include "peripherals.h"
+#include <math.h>
+
+
+// global variables
+
+unsigned int COUNTS_PER_SEC = 200;
+unsigned long int timer_cnt = 0;
+unsigned long int last_cnt = 0;
+unsigned int currScrollWheel;
+float SAWTOOTH_TRIANGLE_PERIOD = (1.0 / 50.0);
+unsigned int ACLK = 32768;
+unsigned long int SMCLK = 1048576;
+unsigned int decrementFlag = 0;  //flag for decrementing for triangle mode
+float delta_time;
+#define MIN_COUNT 45
+
+enum waveform {DC, SQUARE, SAWTOOTH, TRIANGLE};
+enum waveform wave = TRIANGLE;
+
+
+
+// function prototypes
+char readButtons();
+void configButtons();
+void init();
+void startTimerA2(unsigned long int ticks);
+void stopTimer();
+unsigned int readScroll();
+unsigned int scrollChange();
+unsigned int frequencyToTicksSquare(unsigned int frequency);
+unsigned long int periodToTicks(float period);
+void handleWave();
+
+void main () {
+
+    WDTCTL = WDTPW | WDTHOLD;
+
+    //enable_interrupt();
+     _BIS_SR(GIE);
+
+     REFCTL0 &= ~REFMSTR;
+
+
+
+   init();
+   configButtons();
+   DACInit();
+
+   while(1) {
+
+       char x = readButtons();
+
+       // might make pressing these buttons stop timer A2 to clear it out
+       // for next function mode. wrong, you should only clear the timer if
+       // there is a change in scrollWheel.
+
+       // so yes, change in scroll wheel is v important. imo.
+       if(x & BIT0)
+           wave = DC;
+
+       if (x & BIT6)
+           wave = SQUARE;
+
+       if(x & BIT2)
+           wave = SAWTOOTH;
+
+      if(x & BIT4)
+           wave = TRIANGLE;
+
+      currScrollWheel = readScroll(); //maybe not the best place to put this
+      handleWave();
+
+
+
+   }
+
+}
+
+void handleWave() {
+
+    if (wave == DC) {
+
+     DACSetValue(currScrollWheel);
+
+    }
+
+    if(wave == SQUARE) {
+
+        //make timer toggle able
+       // stopTimer();
+       // might make this toggle able
+
+         startTimerA2(frequencyToTicksSquare(100));
+
+         unsigned int codes[2] = {0, currScrollWheel};
+
+         if(timer_cnt == last_cnt) {
+           _no_operation();
+         } else {
+             DACSetValue(codes[timer_cnt % 2]);
+             last_cnt = timer_cnt;
+
+         }
+
+    }
+
+    if(wave == SAWTOOTH) {
+        //               periodToTicks(delta_time)
+
+        startTimerA2(45);
+
+        if(timer_cnt == last_cnt) {
+          _no_operation();
+         } else {
+            DACSetValue(timer_cnt % 4095);
+          }
+
+
+    }
+
+    if(wave == TRIANGLE) {
+
+        startTimerA2(45);
+
+        if(timer_cnt == last_cnt) {
+            _no_operation();
+           } else {
+               toggleDecrement();
+                DACSetValue(timer_cnt);
+                }
+
+
+
+    }
+
+
+}
+
+char readButtons() {
+    char x;
+    char y;
+    char z;
+    char v;
+
+    x = ~(P7IN) & BIT0;  // Button S1
+    y = ~(P3IN) & BIT6;  // Button S2
+    z = ~(P2IN) & BIT2;  // Button S3
+    v = ~(P7IN) & BIT4;  // Button S4
+
+    char outbits = (x | y | z | v);
+
+    return outbits;
+}
+
+
+void configButtons() {
+
+    //Button S1: 7.0 and S4: 7.4
+    P7SEL &= ~(BIT0 | BIT4);
+    P7DIR &= ~(BIT0 | BIT4);
+    P7REN |=  (BIT0 | BIT4);
+    P7OUT |=  (BIT0 | BIT4);
+
+    //Button S2: 3.6
+    P3SEL &= ~(BIT6);
+    P3DIR &= ~(BIT6);
+    P3REN |=  (BIT6);
+    P3OUT |=  (BIT6);
+
+    //Button S3: 2.2
+    P2SEL &= ~(BIT2);
+    P2DIR &= ~(BIT2);
+    P2REN |=  (BIT2);
+    P2OUT |=  (BIT2);
+
+}
+
+void init() {
+
+       configDisplay();
+
+
+       Graphics_clearDisplay(&g_sContext); // Clear the display
+
+       // Write some text to the display
+       Graphics_drawStringCentered(&g_sContext, "S1 = DC", AUTO_STRING_LENGTH, 48, 15, TRANSPARENT_TEXT);
+       Graphics_drawStringCentered(&g_sContext, "S2 = Square", AUTO_STRING_LENGTH, 48, 25, TRANSPARENT_TEXT);
+       Graphics_drawStringCentered(&g_sContext, "S3 = Sawtooth", AUTO_STRING_LENGTH, 48, 35, TRANSPARENT_TEXT);
+       Graphics_drawStringCentered(&g_sContext, "S4 = Triangle", AUTO_STRING_LENGTH, 48, 45, TRANSPARENT_TEXT);
+
+
+       // Draw a box around everything because it looks nice
+       Graphics_Rectangle box = {.xMin = 5, .xMax = 91, .yMin = 5, .yMax = 91 };
+       Graphics_drawRectangle(&g_sContext, &box);
+
+
+       Graphics_flushBuffer(&g_sContext);
+
+}
+
+#pragma vector=TIMER2_A0_VECTOR
+    __interrupt void TimerA2_ISR() {
+
+       if((wave == TRIANGLE) && decrementFlag) {
+           timer_cnt--;
+           decrementFlag = (timer_cnt > 0);  // the moment timer_cnt is 0,
+                                       // we want to stop reversal
+                                       // and begin increment next interrupt
+       } else {
+           timer_cnt++;
+         decrementFlag = (timer_cnt >= 4095);
+
+       }
+
+
+    }
+
+
+void startTimerA2(unsigned long int ticks) {
+
+        TA2CTL = TASSEL_2 | MC_1 | ID_0;
+        TA2CCR0 = ticks;
+        TA2CCTL0 = CCIE;
+}
+
+void stopTimer() {
+    TA2CTL = MC_0;
+    TA2CCTL0 &= ~CCIE;
+    timer_cnt = 0;
+    last_cnt = 0;
+
+}
+
+unsigned int frequencyToTicksSquare(unsigned int frequency) {
+    return ((frequency / 2) * SMCLK) - 1;
+}
+
+unsigned long int periodToTicks(float period) {
+    unsigned long int y = (((period) * SMCLK) - 1);
+    return y;
+}
+
+
+
+unsigned int readScroll() {
+
+        ADC12CTL0 = ADC12SHT0_9 | ADC12ON;     // No internal reference needed
+        ADC12CTL1 = ADC12SHP;                     // Enable sample timer
+
+        // Using ADC12MEM0 to store reading
+        ADC12MCTL0 = ADC12SREF_0 + ADC12INCH_0;  // ADC i/p ch A0 = scroll wheel
+                                                       // ACD12SREF_0 = AVCC 3.3v
+
+
+        ADC12CTL0 |= ADC12ENC;              // Enable conversion
+        ADC12CTL0 &= ~ADC12SC;          // clear the start bit
+
+        ADC12CTL0 |= ADC12SC;       // Sampling and conversion start
+                                    // Single conversion (single channel)
+
+        while (ADC12CTL1 & ADC12BUSY)
+                      __no_operation();
+
+        unsigned int scrollWheelADC = ADC12MEM0 & 0x0FFF;  //Read in results if conversion
+
+       return scrollWheelADC;
+}
+
+
+

@@ -1,0 +1,18 @@
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs1200\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1200/ccs/ccs_base/msp430/include" --include_path="C:/Users/crinconrogers/Documents/ece2049_a22_lab4_crinconrogers_lmloughlin/ece2049_demo_ccs91" --include_path="C:/Users/crinconrogers/Documents/ece2049_a22_lab4_crinconrogers_lmloughlin/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1200/ccs/ccs_base/msp430/include" -i"C:/Users/crinconrogers/Documents/ece2049_a22_lab4_crinconrogers_lmloughlin/ece2049_demo_ccs91/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1200/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****

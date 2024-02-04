@@ -1,0 +1,10 @@
+#include <msp430.h>
+
+//structs
+struct Note {
+    unsigned int pitch;
+    unsigned int duration;
+    char LED;
+};
+
+struct Note NOTE1, NOTE2, NOTE3, NOTE4, NOTE5, NOTE6, NOTE7, NOTE8;
